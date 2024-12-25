@@ -1,9 +1,11 @@
+import 'dotenv/config'
+
 import express, { Express } from 'express';
 
-import { routes } from '@shared/routes';
+import { routes } from '@infra/routes';
 
 const app: Express = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 

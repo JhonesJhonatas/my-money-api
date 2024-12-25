@@ -1,0 +1,16 @@
+services:
+  my-money-postgres:
+    image: postgres:latest
+    container_name: my-money-postgres
+    environment:
+      POSTGRES_USER: my-money-user
+      POSTGRES_PASSWORD: my-money-password
+      POSTGRES_DB: my-money
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
