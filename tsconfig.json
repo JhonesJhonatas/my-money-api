@@ -13,6 +13,8 @@
       "@user/*": ["src/modules/user/*"],
       "@shared/*": ["src/shared/*"],
       "@infra/*": ["src/infra/*"],
-    }
+    },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }

@@ -1,4 +1,7 @@
 import 'dotenv/config'
+import "reflect-metadata"
+
+import '@infra/container'
 
 import express, { Express } from 'express';
 
