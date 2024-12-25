@@ -11,6 +11,7 @@
       "@/*": ["src/*"],
       "@modules/*": ["src/modules/*"],
       "@user/*": ["src/modules/user/*"],
+      "@wallet/*": ["src/modules/wallet/*"],
       "@shared/*": ["src/shared/*"],
       "@infra/*": ["src/infra/*"],
     },

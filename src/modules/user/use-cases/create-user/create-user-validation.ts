@@ -1,4 +1,4 @@
-import { celebrate, Joi } from "celebrate";
+import { celebrate, Joi } from 'celebrate'
 
 export const createUserValidation = celebrate({
   body: Joi.object().keys({
@@ -6,4 +6,4 @@ export const createUserValidation = celebrate({
     email: Joi.string().email().required(),
     password: Joi.string().required(),
   }),
-});
+})

@@ -1,7 +1,10 @@
-import { Router } from "express";
+import { Router } from 'express'
 
-import { userRoutes } from "@user/routes";
+import { userRoutes } from '@user/routes'
+import { walletRoutes } from '@wallet/routes'
 
 export const routes = Router()
 
-routes.use('/users', userRoutes)
+routes.use('/user', userRoutes)
+
+routes.use('/wallet', walletRoutes)
